@@ -1,3 +1,4 @@
+assert(getprop("ro.product.device") == "e400" || getprop("ro.build.product") == "e400");
 ui_print("#################");
 ui_print("#  Google Apps  #");
 ui_print("#  For Lg E400  #");
