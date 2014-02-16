@@ -1,0 +1,18 @@
+ui_print("#################");
+ui_print("#  Google Apps  #");
+ui_print("#  For Lg E400  #");
+ui_print("#               #");
+ui_print("#   By Linuxx   #");
+ui_print("#   ~~~~~~~~~   #");
+ui_print("# Pure Dev Team #");
+ui_print("#################");
+run_program("/sbin/busybox", "mount", "/system");
+show_progress(1, 1);
+delete("/system/app/QuickSearchBox.apk","/system/app/GmsCore.apk","/system/app/Velvet.apk","/system/app/Vending.apk","/system/app/BrowserProviderProxy.apk","/system/app/PartnerBookmarksProvider.apk");
+delete("/system/priv-app/QuickSearchBox.apk","/system/priv-app/GmsCore.apk","/system/priv-app/Velvet.apk","/system/priv-app/Vending.apk","/system/priv-app/BrowserProviderProxy.apk","/system/priv-app/PartnerBookmarksProvider.apk");
+package_extract_dir("system", "/system");
+set_perm(0, 0, 0755, "/system/addon.d/70-gapps.sh");
+set_perm_recursive(0, 0, 0755, 0644, "/system/app");
+set_perm_recursive(0, 0, 0755, 0644, "/system/priv-app");
+run_program("/sbin/busybox", "umount", "/system");
+ui_print("DOne!");
