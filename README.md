@@ -1,7 +1,7 @@
 proprietaries_gapps
 ==========================
 
-Gapps For Lg L3, extra slimmed down due to little /system Partition. Working *ON EVERY* Kitkat Rom
+Gapps For Lg L3, extra slimmed down due to little /system Partition. Working *With All* Kitkat Rom
 ---------------------------------------------------
 
 By Linuxx
