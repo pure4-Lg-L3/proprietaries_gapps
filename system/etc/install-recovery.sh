@@ -14,6 +14,7 @@ rm /system/app/PhaseBeam.apk
 rm /system/app/PhotoTable.apk
 rm /system/app/VideoEditor.apk
 rm /system/app/PicoTts.apk
+rm /system/app/*ota*.apk
 rm /system/app/VisualizationWallpapers.apk
 rm /system/priv-app/CMUpdater.apk
 rm /system/priv-app/VoiceDialer.apk
