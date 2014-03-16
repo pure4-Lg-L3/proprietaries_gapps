@@ -1,5 +1,9 @@
-assert(getprop("ro.product.device") == "e400" || getprop("ro.build.product") == "e400");
+assert(getprop("ro.product.device") == "slim-e400" || getprop("ro.build.product") == "slim-e400");
+assert(getprop("ro.product.device") == "aosp-e400" || getprop("ro.build.product") == "aosp-e400");
+assert(getprop("ro.product.device") == "omni-e400" || getprop("ro.build.product") == "omni-e400");
+assert(getprop("ro.product.device") == "pure-e400" || getprop("ro.build.product") == "pure-e400");
 assert(getprop("ro.product.device") == "cm-e400" || getprop("ro.build.product") == "cm-e400");
+assert(getprop("ro.product.device") == "e400" || getprop("ro.build.product") == "e400");
 ui_print("#################");
 ui_print("#  Google Apps  #");
 ui_print("#  For Lg E400  #");
